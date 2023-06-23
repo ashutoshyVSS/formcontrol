@@ -1,0 +1,18 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let m of mydata">
+        <td>{{ m.Id }} </td>
+        <td>{{ m.name }}</td>
+        <td>{{ m.age }}</td>
+        <td>{{ m.email }}</td><button (click)="clear(m.Id)">Clear</button>
+      </tr>
+    </tbody>
+  </table>
